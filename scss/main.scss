@@ -1,0 +1,89 @@
+//Measurements
+$headerHeight: 5.5em;
+//Colors
+$segmentBackground: #FFFFFF;
+$logoColor: #EF6330;
+//Styling
+$border: 1.5px solid #CFCBC8;
+
+body {
+  margin: 0;
+  background: #F5F5F1;
+}
+&a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  margin: 0;
+  width: 1440px;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  
+  header {
+    list-style: none;
+    margin: 0;
+    border-bottom: $border;
+    padding: 0 2em;
+    background: $segmentBackground;
+    
+    div {
+      height: $headerHeight;
+      position: relative;
+      box-sizing: border-box;
+
+      .logo {
+        margin-right: 1em; 
+        padding: 1em 0;
+        box-sizing: border-box;
+        float: left;
+        a {
+          font-family: 'Alike', serif;
+          font-size: 2.5em;
+          color: $logoColor;
+        }
+      }
+
+      .search {
+        padding: 1.45em 0.25em;
+        box-sizing: border-box;
+        float: left;
+
+        .bar {
+          display: inline;
+          margin: 0;
+          border: 1.5px solid #AAAAAA;
+          border-radius: 3px 0px 0px 3px;
+          border-right: 0px;
+          padding: 0.5em;
+          width: 16em;
+          background: #FBFBFA;
+        }
+
+        #search {
+          margin: -5px;
+          border: 1.5px solid #3C98B1;
+          border-radius: 0px 3px 3px 0px;
+          padding: 0.5em 1em;
+          background: #0192B5;
+          font-weight: 700;
+          color: white;
+        }
+      }
+    }
+    .account {
+      display: inline;
+      li {
+        display: inline;
+        list-style: none;
+        color: #0192B5;
+        }
+      }
+
+  } 
+
+}
+
+
+

@@ -3,16 +3,53 @@
 <head>
   <title>SAMPLE ETSY</title>
   <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Alike' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-  <h1>Etsy!!</h1>
+  <div class="container">
+    
+    <header>
+      <div>
+          <div class="logo"> 
+            <a href="https://www.etsy.com/?ref=lgo">Etsy</a>
+          </div>
 
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="bower_components/underscore/dist/underscore.min.js"></script>
+          <div class="search">
+            <input type="text" class="bar" placeholder="Search for items or shops">
+            <button id="search">Search</button>
+          </div>
+      </div>
 
-  <script src="js/data.js"></script>
-  <script src="js/main.js"></script>
+      <ul class="account">
+          <li>
+            <a href="#">Sell on Etsy</a>
+          </li>
+
+          <li>
+            <a href="#">Register</a>
+          </li>
+
+          <li>
+            <button>Sign in</button>
+          </li>
+
+          <li>
+            <button id="cart">
+            <img src="images/cart.png">
+            <span>Cart</span>
+            </button>
+          </li>
+      </ul>
+    </header>
+
+  </div>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/underscore/dist/underscore.min.js"></script>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

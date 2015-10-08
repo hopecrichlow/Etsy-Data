@@ -51,9 +51,17 @@ a {
           background: #0192B5;
           font-weight: 700;
           color: white; }
-    .container header .account {
-      display: inline; }
-      .container header .account li {
-        display: inline;
-        list-style: none;
-        color: #0192B5; }
+      .container header div .account {
+        display: inline-block;
+        margin: 0;
+        padding: 1.45em 0.25em;
+        box-sizing: border-box;
+        float: right;
+        text-decoration: none; }
+        .container header div .account li {
+          display: inline;
+          list-style: none;
+          color: #0192B5; }
+          .container header div .account li #cart div {
+            display: block;
+            height: 3em; }

@@ -71,15 +71,27 @@ body {
           color: white;
         }
       }
-    }
-    .account {
-      display: inline;
-      li {
-        display: inline;
-        list-style: none;
-        color: #0192B5;
+
+      .account {
+        display: inline-block;
+        margin: 0;
+        padding: 1.45em 0.25em;
+        box-sizing: border-box;
+        float: right;
+        text-decoration: none;
+        li {
+          display: inline;
+          list-style: none;
+           color: #0192B5;
+          #cart div {
+            display: block;
+            height: 3em;            
+          }
         }
       }
+
+    }
+
 
   } 
 

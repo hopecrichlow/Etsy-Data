@@ -8,21 +8,27 @@ a {
 
 .container {
   margin: 0;
-  width: 1440px;
+  width: 100%;
   height: 100%;
   font-family: Arial, sans-serif; }
   .container header {
-    width: 100%;
+    width: 100em;
+    height: 5.5em;
     list-style: none;
     margin: 0;
     border-bottom: 1.5px solid #CFCBC8;
     padding: 0 2em;
-    background: #FFFFFF; }
+    background: #FFFFFF;
+    box-sizing: border-box;
+    position: absolute; }
     .container header div {
+      margin-left: 1em;
+      width: 75em;
+      padding: 0em 2em;
       height: 5.5em;
-      position: relative;
-      box-sizing: border-box; }
+      position: relative; }
       .container header div .logo {
+        max-width: 80px;
         margin-right: 1em;
         padding: 1em 0;
         box-sizing: border-box;
@@ -32,6 +38,7 @@ a {
           font-size: 2.5em;
           color: #EF6330; }
       .container header div .search {
+        width: 365px;
         padding: 1.45em 0.25em;
         box-sizing: border-box;
         float: left; }

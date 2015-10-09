@@ -2,28 +2,29 @@ body {
   margin: 0;
   background: #F5F5F1; }
 
+li {
+  display: inline;
+  list-style: none; }
+
 a {
   text-decoration: none;
   cursor: pointer; }
 
 .container {
-  margin: 0;
-  width: 100%;
-  height: 100%;
+  margin: 0px;
   font-family: Arial, sans-serif; }
   .container header {
-    width: 100em;
+    margin: 0px;
+    width: auto;
     height: 5.5em;
     list-style: none;
-    margin: 0;
     border-bottom: 1.5px solid #CFCBC8;
-    padding: 0 2em;
     background: #FFFFFF;
     box-sizing: border-box;
-    position: absolute; }
+    display: block; }
     .container header div {
-      margin-left: 1em;
-      width: 75em;
+      margin: auto;
+      max-width: 1052px;
       padding: 0em 2em;
       height: 5.5em;
       position: relative; }
@@ -66,8 +67,6 @@ a {
         box-sizing: border-box;
         float: right; }
         .container header div .account li {
-          display: inline;
-          list-style: none;
           margin: 0.3em;
           font-size: 0.9em; }
           .container header div .account li a {
@@ -79,12 +78,15 @@ a {
           background: transparent;
           color: #3791B2; }
         .container header div .account #cart {
-          display: inline; }
+          display: inline;
+          padding: 0px; }
           .container header div .account #cart button {
             margin-left: 0.7em;
             border: none;
+            border-left: 1.5px solid #CFCBC8;
+            padding-left: 10px;
             background: transparent;
-            align: center; }
+            box-sizing: border-box; }
             .container header div .account #cart button img {
               width: 1.9em; }
             .container header div .account #cart button a {
@@ -92,3 +94,23 @@ a {
               color: #666666;
               text-align: center;
               font-size: 0.85em; }
+    .container header nav {
+      margin: 0em;
+      border-bottom: 1.5px solid #CFCBC8;
+      background: #FFFFFF;
+      display: block; }
+      .container header nav div {
+        list-style: none;
+        padding: 0em 2em;
+        max-width: 1052px;
+        height: auto;
+        white-space: nowrap;
+        position: relative; }
+        .container header nav div ul {
+          margin: 0px;
+          padding: 5px; }
+          .container header nav div ul li a {
+            color: #666666;
+            margin-right: 14px;
+            font-size: 15px;
+            text-align: left; }

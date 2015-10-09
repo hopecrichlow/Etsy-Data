@@ -3,6 +3,7 @@ $headerHeight: 5.5em;
 //Colors
 $segmentBackground: #FFFFFF;
 $logoColor: #EF6330;
+$mainBlue: #0192B5;
 //Styling
 $border: 1.5px solid #CFCBC8;
 
@@ -22,6 +23,7 @@ body {
   font-family: Arial, sans-serif;
   
   header {
+    width: 100%;
     list-style: none;
     margin: 0;
     border-bottom: $border;
@@ -78,16 +80,44 @@ body {
         padding: 1.45em 0.25em;
         box-sizing: border-box;
         float: right;
-        text-decoration: none;
         li {
           display: inline;
           list-style: none;
-           color: #0192B5;
-          #cart div {
-            display: block;
-            height: 3em;            
+          margin: 0.3em;
+          font-size: 0.9em;
+          a {
+            color: #3791B2;
           }
-        }
+        } 
+
+          .sign-in {
+            border: 1px solid #3C98B1;
+            border-radius: 3px;
+            padding: 8px;
+            background: transparent;
+            color: #3791B2;
+          }
+
+          #cart {
+            display: inline;
+
+            button {
+              margin-left: 0.7em;
+              border: none;
+              background: transparent;
+              align: center;
+              img {
+                width: 1.9em;
+              }
+              a {
+                display: block;
+                color: #666666;
+                text-align: center;
+                font-size: 0.85em;
+              }   
+            }        
+          }
+        
       }
 
     }

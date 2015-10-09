@@ -12,6 +12,7 @@ a {
   height: 100%;
   font-family: Arial, sans-serif; }
   .container header {
+    width: 100%;
     list-style: none;
     margin: 0;
     border-bottom: 1.5px solid #CFCBC8;
@@ -56,12 +57,31 @@ a {
         margin: 0;
         padding: 1.45em 0.25em;
         box-sizing: border-box;
-        float: right;
-        text-decoration: none; }
+        float: right; }
         .container header div .account li {
           display: inline;
           list-style: none;
-          color: #0192B5; }
-          .container header div .account li #cart div {
-            display: block;
-            height: 3em; }
+          margin: 0.3em;
+          font-size: 0.9em; }
+          .container header div .account li a {
+            color: #3791B2; }
+        .container header div .account .sign-in {
+          border: 1px solid #3C98B1;
+          border-radius: 3px;
+          padding: 8px;
+          background: transparent;
+          color: #3791B2; }
+        .container header div .account #cart {
+          display: inline; }
+          .container header div .account #cart button {
+            margin-left: 0.7em;
+            border: none;
+            background: transparent;
+            align: center; }
+            .container header div .account #cart button img {
+              width: 1.9em; }
+            .container header div .account #cart button a {
+              display: block;
+              color: #666666;
+              text-align: center;
+              font-size: 0.85em; }

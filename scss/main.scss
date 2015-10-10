@@ -22,12 +22,14 @@ body {
 
 .container {
   margin: 0px;
-  // height: 100%;
   font-family: Arial, sans-serif;
-  
+
+  //////////////////////
+
   header {
     margin: 0px;
     width: auto;
+    min-width: 1052px;
     height: $headerHeight;
     list-style: none;
     border-bottom: $border;
@@ -37,7 +39,6 @@ body {
     
     div {
       margin: auto;
-      max-width: 1052px;
       padding: 0em 2em;
       height: $headerHeight;
       position: relative;
@@ -54,8 +55,7 @@ body {
           color: $logoColor;
         }
       }
-
-
+    //////////////////////
       .search {
         width: 365px;
         padding: 1.45em 0.25em;
@@ -83,27 +83,25 @@ body {
           color: white;
         }
       }
-
+    //////////////////////
       .account {
         display: inline-block;
-        margin: 0;
-        padding: 1.45em 0.25em;
+        margin: 0em;
+        padding-top: 1em;
+        height: $headerHeight;
         box-sizing: border-box;
         float: right;
-
-        li {
+        li a {
           margin: 0.3em;
           font-size: 0.9em;
-          a {
-            color: #3791B2;
-          }
+          color: #3791B2;
         } 
 
           .sign-in {
             border: 1px solid #3C98B1;
             border-radius: 3px;
             padding: 8px;
-            background: transparent;
+            background: $segmentBackground;
             color: #3791B2;
           }
 
@@ -129,11 +127,12 @@ body {
             }        
           }
         
-      }
-    }
+      } //ACCOUNT END
+    } ////////////////PRIMARY HEADER 
 
     nav {
     margin: 0em;
+    margin-bottom: 2em;
     border-bottom: $border;
     background: $segmentBackground;
     display: block;
@@ -155,11 +154,26 @@ body {
           }
         }
       }
-    }
+    } //PRODUCT CATEGORIES
+  } //////////////////////HEADER END
 
+  ////////////////
 
-  } 
-}
+  .main {
+    margin: 0em;
+    width: auto;
+    min-width: 1052px;
+    display: inline-block;
+    margin-top: 15px;
+      .filter {
+        width: 25%;
+        display: block;
+        
+      }
+
+  } ///////////////////MAIN END
+
+}///////////////CONTAINER END
 
 
 

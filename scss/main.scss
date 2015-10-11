@@ -194,13 +194,11 @@ body {
             padding-bottom: 0.5em; 
             color: #555555;
           }
+
           ul {
             margin: 0em;
             padding: 0em;
             line-height: 1.75em;
-            br {
-
-            }
             li {
               margin-bottom: 1em;
               padding: 0em 0em 0.5em 0.5em;
@@ -209,6 +207,75 @@ body {
               }
             }
           }
+
+          .funnel {
+            margin-bottom: 1em;
+            border-bottom: $border;
+            padding-bottom: 1.25em;
+          }
+
+            label {
+              display: block;
+              margin-bottom: 0.5em;
+              // .filter-radio {
+              //   input:checked {
+              //   background: #3791B2;
+              //   border-color: $border;
+              //   }
+              // }
+              a {
+                color: #3791B2;
+              }
+            }
+            span {
+              // box-sizing: border-box;
+              margin: 0em 0.25em;
+            }
+            .price {
+              display: inline-block;
+              border: $border;
+              border-radius: 3px;
+              box-sizing: border-box;
+              input {
+                border: 0em;
+                padding: 0.75em 1em 0.75em 0em;
+                width: 2em;
+              }
+            }
+            button {
+              margin-left: 0.25em;
+              border: $border;
+              border-radius: 3px;
+              padding: 0.75em 1.2em;
+              background: #FFFFFF;
+            }
+            button:hover {
+              background: #B1B1B1;
+            }
+
+            .colors {
+              .swatch {
+                margin-right: 0.5em;
+                border: $border;
+                border-radius: 3px;
+                span {
+                  padding: 0.5em;
+                  height: 0.5em;
+                  width: 0.5em;
+                }
+              }
+            }
+
+            a {
+                color: #3791B2;
+              }
+
+            select {
+              padding: 5px;
+              option {
+                padding: 1em;
+              }
+            }
         }////////////INNER END
 
       }///////////////FILTER END

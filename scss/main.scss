@@ -296,26 +296,86 @@ body {
           font-size: 0.8em;
           color: #6F6F6F;
           display: inline-block;
-            p {
-              margin: 0em;
-            }
-            a {
-              color: #3791B2;
-            }
-            h4 {
-              color: #555555;
-              display: inline;
-            }
-            .showing-left {
-              float: left;
-            }
-            .showing-right {
-              float: right;
-            }
-          
+          p {
+            margin: 0em;
+          }
+          a {
+            color: #3791B2;
+          }
+          h4 {
+            color: #555555;
+            display: inline;
+          }
+          .showing-left {
+            float: left;
+          }
+          .showing-right {
+            float: right;
+          }
         }
       }
+      //////////////
+      .graphics {
+        display: inline;
+        .result-box {
+          float: left;
+          border: $border;
+          border-radius: 3px;
+          width: 245px;
+          height: 245px;
+          margin: 10px;
+          text-overflow: hidden;
+          display: inline-block;
+          img {
+            width: 100%;
+          }
+          .result-caption {
+            border: 0em;
+            background-color: $segmentBackground;
 
+            p {
+                margin: 0px;
+                font-size: 1em;
+              }
+            .title {
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              margin-left: 6px;
+              display: block;
+              a {
+                margin: 0;
+                color: #555555;
+              }
+              a:hover {
+                text-decoration: none;
+              }
+            }
+
+            .authour {
+              display: inline-block;
+              font-size: 12px;
+              margin: 6px;
+              float: left;
+              p {
+                color: #AAAAAA;
+              }
+            }
+
+            .price {
+              float: right;
+              display: inline-block;
+              color: #8AB746;
+            }
+            .currency {
+              float: right;
+              display: inline-block;
+              color: #8AB746;
+            }
+
+          }
+        }
+      } ///////////////////GRAPHICS END
   } ///////////////////MAIN END
 
 }///////////////CONTAINER END

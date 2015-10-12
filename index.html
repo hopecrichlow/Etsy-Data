@@ -207,9 +207,11 @@
                 <img src="<%= Images[0].url_170x135 %>">
                 <div class="result-caption">
                     <div>
-                      <p class="title">
-                        <%= title %>
-                      </p>
+                      <a href="#">
+                        <p class="title">
+                          <%= title %>
+                        </p>
+                      </a>
                     </div>
 
                     <div> 
@@ -221,11 +223,11 @@
                     </div>
 
                     <div>  
-                      <p class="price">
-                        <%= price %>
-                      </p>
                       <p class="currency">
                         <%= currency_code %>
+                      </p>
+                      <p class="price">
+                         $<%= price %>
                       </p>
                     </div>
                 </div> 

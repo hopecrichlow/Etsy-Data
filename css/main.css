@@ -123,8 +123,10 @@ a {
     display: block; }
     .container .main .filter {
       width: 25%;
-      display: block;
-      white-space: nowrap; }
+      display: inline-block;
+      white-space: nowrap;
+      box-sizing: border-box;
+      float: left; }
       .container .main .filter a:hover {
         text-decoration: underline; }
       .container .main .filter h5 {
@@ -194,3 +196,26 @@ a {
           padding: 5px; }
           .container .main .filter .inner select option {
             padding: 1em; }
+    .container .main .results {
+      margin-left: 1em;
+      width: 70%;
+      float: left;
+      display: inline-block;
+      box-sizing: border-box; }
+      .container .main .results .heading {
+        margin: 10px;
+        width: 100%;
+        font-size: 0.8em;
+        color: #6F6F6F;
+        display: inline-block; }
+        .container .main .results .heading p {
+          margin: 0em; }
+        .container .main .results .heading a {
+          color: #3791B2; }
+        .container .main .results .heading h4 {
+          color: #555555;
+          display: inline; }
+        .container .main .results .heading .showing-left {
+          float: left; }
+        .container .main .results .heading .showing-right {
+          float: right; }

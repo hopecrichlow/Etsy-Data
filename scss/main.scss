@@ -167,8 +167,10 @@ body {
     display: block;
       .filter {
         width: 25%;
-        display: block;
+        display: inline-block;
         white-space: nowrap;
+        box-sizing: border-box;
+        float: left;
         a:hover { 
           text-decoration: underline;
         }
@@ -282,7 +284,37 @@ body {
 
       ////////////////////////////
 
-      
+      .results {
+        margin-left: 1em;
+        width: 70%;
+        float: left;
+        display: inline-block;
+        box-sizing: border-box;
+        .heading {
+          margin: 10px;
+          width: 100%;
+          font-size: 0.8em;
+          color: #6F6F6F;
+          display: inline-block;
+            p {
+              margin: 0em;
+            }
+            a {
+              color: #3791B2;
+            }
+            h4 {
+              color: #555555;
+              display: inline;
+            }
+            .showing-left {
+              float: left;
+            }
+            .showing-right {
+              float: right;
+            }
+          
+        }
+      }
 
   } ///////////////////MAIN END
 

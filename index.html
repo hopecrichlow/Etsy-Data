@@ -109,115 +109,94 @@
 
           <h5>Refine your search</h5>
           <div class="outter">
+            <div class="inner">
 
-            <form class="inner">
+              <form>
+                  <h4>Item Type</h4>
+                  <label class="radio">
+                    <input type="radio" name="all-items" value class="radio" data-form-type="url" checked="checked">
+                    <a href="#">All Items</a>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="handmade" value class="radio" data-form-type="url">
+                    <a href="#">Handmade</a>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="vintage" value class="radio" data-form-type="url">
+                    <a href="#">Vintage</a>
+                  </label>
+              </form>
 
-              <div class="funnel">
-              <h4>Item Type</h4>
+              <form>
+                  <li><h4>Price</h4></li>
+                  <div class="price">
+                    <span>$</span>
+                    <input type="text" class="#" placeholder="Low">
+                  </div>
+                  <span>to</span>
+                  <div class="price">
+                    <span>$</span>
+                    <input type="text" class="#" placeholder="High">
+                  </div>
+                  <button class="price">#</button>
+              </form>
 
-                <label class="filter-radio">
-                  <input type="radio" name="all-items" value class="radio" data-form-type="url" checked="checked">
-                  <a href="#">All Items</a>
-                </label>
-
-                <label class="filter-radio">
-                  <input type="radio" name="handmade" value class="radio" data-form-type="url">
-                  <a href="#">Handmade</a>
-                </label>
-
-                <label class="filter-radio">
-                  <input type="radio" name="vintage" value class="radio" data-form-type="url">
-                  <a href="#">Vintage</a>
-                </label>
-              </div>
-
-              <div class="funnel">
-                <li><h4>Price</h4></li>
-
-                <div class="price">
-                  <span>$</span>
-                  <input type="text" class="#" placeholder="Low">
-                </div>
-
-                <span>to</span>
-
-                <div class="price">
-                  <span>$</span>
-                  <input type="text" class="#" placeholder="High">
-                </div>
-
-                <button class="price">#</button>
-              </div>
-
-              <div class="funnel">
-                <li><h4>Filter by Color</h4></li>
-                <div class="colors">
+              <form>
+                  <li><h4>Filter by Color</h4></li>
+                  <div class="colors">
                     <a href="#" style="background-color: #E34543;" class="swatch"><span></span></a>
-
                     <a href="#" style="background-color: #F28831;" class="swatch"><span></span></a>
-
                     <a href="#" style="background-color: #F0C933;" class="swatch"><span></span></a>
-
                     <a href="#" style="background-color: #59B713;" class="swatch"><span></span></a>
-
                     <a href="#" style="background-color: #52C9F0;" class="swatch"><span></span></a>
-
                     <a href="#" style="background-color: #9452F1;" class="swatch"><span></span></a>
-
                     <a href="#" style="background-color: #000000;" class="swatch"><span></span></a>
-
                     <a href="#" style="background-color: #FFFFFF;" class="swatch"><span></span></a>
-                </div>
-              </div> 
+                  </div>
+              </form> 
 
-              <div class="funnel">
-              <h4>Ordering Options</h4>
+              <form>
+                  <h4>Ordering Options</h4>
+                  <label class="ordering">
+                    <input type="checkbox">
+                    <a href="#">Accepts Etsy Gift Cards</a>
+                  </label>
+                  <label class="ordering">
+                    <input type="checkbox">
+                    <a href="#">Customizable</a>
+                  </label>
+              </form>
 
-                <label class="filter-radio">
-                  <input type="checkbox" name="gift-cards" value class="checkbox" data-form-type="url">
-                  <a href="#">Accepts Etsy Gift Cards</a>
-                </label>
-
-                <label class="ordering">
-                  <input type="checkbox" name="customizables" value class="checkbox" data-form-type="url">
-                  <a href="#">Customizable</a>
-                </label>
-              </div>
-
-              <div class="funnel">
-                <h4>Shop Location</h4>
-
-                <label class="filter-radio">
-                  <input type="radio" name="anywhere" value class="radio" data-form-type="url" checked="checked">
-                  <a href="#">Anywhere</a>
-                </label>
-
-                <label class="filter-radio">
-                  <input type="radio" name="united-states" value class="radio" data-form-type="url">
-                  <a href="#">United States</a>
-                </label>
-
-                <a href="#">Choose a custom location</a>
-              </div>
+              <form>
+                  <h4>Shop Location</h4>
+                  <label class="radio">
+                    <input type="radio" checked="checked">
+                    <a href="#">Anywhere</a>
+                  </label>
+                  <label class="radio">
+                    <input type="radio">
+                    <a href="#">United States</a>
+                  </label>
+                  <a href="#">Choose a custom location</a>
+              </form>
             
-              <div class="funnel">
-                <h4>Ship To</h4>
+              <form>
+                  <h4>Ship To</h4>
+                  <select class="country">
+                    <option>United States</option>
+                  </select>
+              </form>
+            </div> <!-- INNER END -->
+         </div><!-- OUTER END -->
 
-                <select class="country">
-                  <option>United States</option>
-                </select>
-              </div>
-
-
-
-          </form> <!-- INNER END -->
-      </div>
-
-    </div>
+      </div> <!-- FILTER END -->
 
 
+      
 
-  </div>
+    </div><!-- MAIN END -->
+
+  </div><!-- CONTAINER END -->
 
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/underscore/underscore-min.js"></script>

@@ -197,10 +197,42 @@
           <div class="heading">
             <p class="showing-left">
                   <a href="#">All Categories</a> > <span> <h4>"whiskey" </h4> </span>(25,581 Results)
-            
             <p class="showing-right">Sort by: <a href="#">Relevancy</a></p>
-
           </div><!-- HEADING END -->
+
+          <div class="graphics">
+
+            <script type="text/template" id="itemTemplate">
+              <div class="result-box">
+                <img src="<%= Images[0].url_170x135 %>">
+                <div class="result-caption">
+                    <div>
+                      <p class="title">
+                        <%= title %>
+                      </p>
+                    </div>
+
+                    <div> 
+                      <p class="author">
+                        <a href+"#">
+                          <%= Shop.shop_name %>
+                        </a>
+                      </p>    
+                    </div>
+
+                    <div>  
+                      <p class="price">
+                        <%= price %>
+                      </p>
+                      <p class="currency">
+                        <%= currency_code %>
+                      </p>
+                    </div>
+                </div> 
+              </div>
+            </script> 
+
+          </div><!-- GRAPHICS END -->
 
       </div><!-- RESULTS END -->
 
